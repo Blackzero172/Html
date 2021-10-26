@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3.1</title>
+</head>
+<body>
+    <h1>Create An Account</h1>
+    <form action="process.php">
+    <div>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email"><br> <br>
+    </div>
+    <div>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter Your Password"> <br> <br>
+    </div>
+        <label for="age">Age:</label> <br>
+        <select name="age" id="age" style="width:90px">
+            <option value="Select Age">Select Age</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">1+</option>
+            <option value="17">18</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20+">20+</option>
+         
+        </select> <br> <br>
+    <div>
+        <label for="Message">Tell Us A Little About Yourself:</label><br>
+        <textarea name="Message" id="Message" cols="50" rows="5"></textarea> <br> <br>    
+    </div>
+    <div>
+        <input type="checkbox" name="Terms" id="Terms"> I Agree To The <a href="#">Terms Of Service</a> <br> <br>
+        
+    </div>
+    <div>
+        <button>Sign Up</button>
+    </div>
+    </form>
+</body>
+</html>
