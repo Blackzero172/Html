@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout 12.3</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .clr{
+            clear: both;
+        }
+        .container{
+            max-width: 1100px;
+            max-height: 960px;
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+        }
+        #box-1{
+            background-color: rgb(255, 160, 35);
+            border: rgb(255, 160, 35) 2px solid ;
+            height: 10vh;
+            float: top;
+            padding: 20px;
+            
+        }
+        #box-2{
+            background-color: rgb(0, 141, 24);
+            border: rgb(0, 141, 24) 2px solid ;
+            width: 30%;
+            float: left;
+            padding: 20px;
+            margin-top: 10px;
+            height: 70vh;
+        }
+        #box-3{
+            background-color: rgb(125, 0, 184);
+            border: rgb(125, 0, 184) 2px solid ;
+            width: 69%;
+            float: right;
+            padding: 20px;
+            margin-top: 10px;
+            height: 70vh;
+        }
+        #box-4{
+            background-color: rgb(3, 0, 204);
+            border: rgb(3, 0, 204) 2px solid ;
+            height: 10vh;
+            float: bottom;
+            padding: 20px;
+            margin-top: 5px;
+        }
+        @media(max-width: 500px){
+            #box-2{
+                background-color: rgb(0, 141, 24);
+                border: rgb(0, 141, 24) 0px solid ;
+                width:0%;
+                float: left;
+                padding:0px;
+                margin-top: 0px;
+                height: 0vh;
+                font-size: 0px;
+            }
+            #box-3{
+                width: 99%;
+            }
+        }
+        @media(min-width: 501px) and (max-width: 768px){
+            #box-2{
+                width: 10%;
+            }
+            #box-3{
+                width: 89%;
+            }
+        }
+        @media(min-width: 769px) and (max-width: 1200px){
+            #box-2{
+                width: 20%;
+            }
+            #box-3{
+                width: 79%;
+            }
+        }
+        @media(min-width: 1201px) {
+            #box-2{
+                width: 30%;
+            }
+            #box-3{
+                width: 69%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+    <div id="box-1" class="box">
+        <h1>Header</h1>
+    </div>
+    <div id="box-2" class="box">
+        <h1>Side</h1>
+    </div>
+    <div id="box-3" class="box">
+        <h1>Main</h1>
+    </div>
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+        <h1>Footer</h1>
+    </div>
+    </div>
+    
+</body>
+</html>
