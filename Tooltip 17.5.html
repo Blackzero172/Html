@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip 17.5</title>
+    <style>
+        .tooltip {
+  position: relative;
+  display: inline-block;
+  color: purple;
+}
+
+.tooltip::after{
+content: attr(data-tooltip);
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(145, 145, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover::after{
+  visibility: visible;
+}
+        p{
+            font-size: 20px;
+        }
+    </style>
+    <body>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolor deserunt suscipit sit temporibus quae, consectetur aperiam eveniet! Iure architecto nisi necessitatibus sunt dignissimos quibusdam quidem neque quo! Voluptate quis odio beatae nostrum! Dignissimos placeat dolorem nihil numquam, tempore soluta ut perferendis <span class='tooltip' data-tooltip='This is a badass tooltip'> laudantium.</span> Quae, quas alias, minus deleniti esse totam rerum non eveniet nostrum accusantium eius illo maiores iste inventore dignissimos, earum nulla quod. Cum saepe optio asperiores laudantium totam, officiis corporis ipsam ad, nam repudiandae sunt. <span class='tooltip' data-tooltip='This is a badass tooltip'>Dolorem</span> saepe nobis, amet provident reiciendis unde earum sed dolore consequatur asperiores minus accusamus explicabo laudantium optio omnis nesciunt reprehenderit doloremque? Soluta, odit?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quae dolorum, quia ut, aut deleniti incidunt saepe a quasi vero nemo at totam possimus <span class='tooltip' data-tooltip='This is a badass tooltip'> laudantium. </span> Magnam rerum optio laboriosam repudiandae laborum numquam? Dolore quaerat provident <span class='tooltip' data-tooltip='This is a badass tooltip'>dolorem </span> culpa, iste repellendus blanditiis, ipsum dicta qui sapiente, nesciunt ducimus corporis reprehenderit totam porro. Fuga iusto ad nisi ducimus cum voluptate eum maxime, iure, dicta ipsam aliquam. Accusamus autem sequi, quaerat, quod unde doloremque dignissimos est ipsam facilis recusandae possimus enim suscipit et vel nesciunt amet rem! Magnam accusamus cumque, velit animi maiores, praesentium autem fugiat quasi necessitatibus molestias repellat vel alias voluptas dolorem!</p>
+    
+    
+    </body>
+    </html>

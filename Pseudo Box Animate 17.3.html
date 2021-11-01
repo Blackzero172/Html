@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo box Animate 17.3</title>
+        <style>
+            #Box-1{
+                border: 2px purple solid;
+                background-color: purple;
+                width: 6vw;
+                height:20vh;
+            }
+            #Box-1:after{
+                margin-top: -0.25vh;
+                content: '`';
+                position: absolute;
+                left: 125.25px;
+                height: 20vh;
+                width: 6vw;
+                border: 2px red solid;
+                background-color: red;
+            }
+            #Box-1:hover{
+                content: '`';
+                background-color: blue;
+            }
+        </style>
+</head>
+<body>
+    <div class="box" id="Box-1">`</div>
+</body>
+</html>
