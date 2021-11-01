@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Nav 15.5</title>
+    <style>
+    .flex{
+            display: flex;
+            border: 1px rgb(219, 219, 219) solid;
+            background-color: rgb(219, 219, 219);
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            width: 99vw;
+            height: 5vh;
+            color: rgb(66, 84, 184);
+        }
+    .buttons{
+            margin-top: -35px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .buttons a{
+            margin-left: 5px;
+            margin-right: 10px;
+            position: relative;
+            left: 0x;
+            list-style: none;
+            text-decoration: none;
+            color: rgb(66, 84, 184);
+        }
+        .flex p{
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        @media(max-width: 500px){
+            .flex{
+            display: flex;
+            border: 1px rgb(219, 219, 219) solid;
+            background-color: rgb(219, 219, 219);
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            width: 99vw;
+            height: 30vh;
+            color: rgb(66, 84, 184);
+        }
+        .buttons{
+            display: flex;
+            margin-left: 5vw;
+            flex-direction: column;
+            margin-top: -22vh;
+            justify-content: end;
+            align-items:center;
+        }
+        .buttons a{
+            margin-left: -5px;
+            margin-right: 10px;
+            position: relative;
+            left: 0x;
+            list-style: none;
+            text-decoration: none;
+            color: rgb(66, 84, 184);
+            margin-bottom: 30px;
+            font-size: 17px;
+        }
+        .flex p{
+            margin: 7px 0px;
+            font-size: 25px;
+            margin-left:;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <p>APPLESEEDS</p>
+    </div>
+    <div class="buttons">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">PORTFOLIO</a>
+        <a href="">CONTACT</a>
+    </div>
+   
+</body>
+</html>
