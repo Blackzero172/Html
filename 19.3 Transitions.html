@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions 19.3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .box{
+            border: 3px black solid;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.75s ease-in-out;
+        }
+        .box h1{
+            padding: 20px;
+        }
+        .box-1:before{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            content:'YEAH!';
+            font-size: 25px;
+            background-color: red;
+            transform: translateY(-100%);
+            transition: all 0.75s ease-in-out;
+        }
+        .box-1:hover::before{
+            transform: translateY(0);
+        }
+        .box h1{
+            padding: 20px;
+        }
+        .box-2:before{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            content:'';
+            background-color: rgb(65, 65, 65);
+            transform: translateX(-100%);
+            transition: all 0.75s ease-in-out;
+            z-index: -1;
+        }
+        .box-2:hover::before{
+            transform: translateX(0);
+        }
+        .box-2:hover{
+            color: white;
+        }
+        .box-3:before{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            content:'';
+            font-size: 25px;
+            background-color: gold;
+            transform: rotate(-90deg) translateY(-100%) translateX(100%);
+            transition: all 0.75s ease-in-out;
+            z-index: -1;
+        }
+        .box-3:hover::before{
+            transform: rotate(0deg) translateY(0%) translateX(0%);
+            font-size: 32px;
+            z-index: -1;
+        }
+        .box-4:before{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            content:'Scale & Opacity';
+            font-size: 32px;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0);
+            transform: scale(1.5);
+            transition: all 0.75s ease-in-out;
+        }
+        .box-4:hover::before{
+            opacity: 1;
+            background-color: rgb(0, 0, 0);
+            transform: scale(1);
+            color: white;
+        }
+        #flex{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100vh;
+            width: 100vw;  
+        }
+    </style>
+</head>
+<body>
+    <div id="flex">
+    <div class="box box-1">
+        <h1>Translate-Y</h1>
+    </div>
+    <div class="box box-2">
+        <h1>Translate</h1>
+    </div>
+    <div class="box box-3">
+        <h1>Rotate</h1>
+    </div>
+    <div class="box box-4">
+        <h1>Scale & Opacity</h1>
+
+    </div>
+    </div>
+</body>
+</html>

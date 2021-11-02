@@ -6,28 +6,61 @@
     <script src="https://kit.fontawesome.com/78fb10cff2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refactor With Nav Menu 8.2</title>
+    <title>Refactor With CSS Variables 18.2</title>
     <style>
+        :root{
+            --card-width: 390px;
+            --font-family: "Oswald", sans-serif;
+            --text-align: center;
+            --border-radius: 20px;
+            --margin-top: 100px;
+            --padding-bottom: 20px;
+            --padding-left: 10px;
+        }
     
         p{
             margin-right: 15px;
-            text-align: center;
+            text-align: var(--text-align);
         }
         ul{
             margin-left: -35px;
             
         }
         #Ez{
-            text-align: center;
+            text-align: var(--text-align);
             background-color: rgb(64, 139, 3);
-            width: 390px;
-            padding-bottom: 20px;
-            padding-left: 10px;
-            font-family: "Oswald", sans-serif;
-            border-radius: 20px;
+            width: var(--card-width);
+            padding-bottom: var(--padding-bottom);
+            padding-left: var(--padding-left);
+            font-family: var(--font-family);
+            border-radius: var(--border-radius);
             position: absolute;
             left:  720px;
-            margin-top: 100px; 
+            margin-top: var(--margin-top);
+        }
+            #Zoe{
+            text-align: var(--text-align);
+            background-color: rgb(204, 0, 255);
+            width: var(--card-width);
+            padding-bottom: var(--padding-bottom);
+            padding-left: var(--padding-left);
+            font-family: var(--font-family);
+            border-radius: var(--border-radius);
+            position: absolute;
+            left:  100px; 
+            margin-top: var(--margin-top);
+        }
+        #Lux{
+            text-align: var(--text-align);
+            background-color: rgba(248, 193, 74, 0.781);
+            width: var(--card-width);
+            padding-bottom: var(--padding-bottom);
+            padding-left: var(--padding-left);
+            font-family: var(--font-family);
+            border-radius: var(--border-radius);
+            position: absolute;
+            left:  1350px;
+            margin-top: var(--margin-top);
         }
         #ZoeColor{
             color: rgb(132, 0, 255);
@@ -39,43 +72,20 @@
             color: brown;
         }          
         p,h3{
-            text-align: center;
+            text-align: var(--text-align);
             position: relative;
             left: 10px;
         }
-        #Zoe{
-            text-align: center;
-            background-color: rgb(204, 0, 255);
-            width: 390px;
-            padding-bottom: 20px;
-            padding-left: 10px;
-            font-family: "Oswald", sans-serif;
-            border-radius: 20px;
-            position: absolute;
-            left:  100px; 
-            margin-top: 100px;
-        }
-        #Lux{
-            text-align: center;
-            background-color: rgba(248, 193, 74, 0.781);
-            width: 390px;
-            padding-bottom: 20px;
-            padding-left: 10px;
-            font-family: "Oswald", sans-serif;
-            border-radius: 20px;
-            position: absolute;
-            left:  1350px;
-            margin-top: 100px;
-        }
+        
         
         body{
-            text-align: center;
+            text-align: var(--text-align);
             background-image: url(https://ak.picdn.net/shutterstock/videos/1442515/thumb/8.jpg);
             background-position: top;
             background-repeat: no-repeat;
             background-size: cover; }
         img { 
-            text-align: center;
+            text-align: var(--text-align);
             width: 300px; height: 300px; border-radius: 50%; overflow: hidden;
         }
         .navbar {
@@ -134,7 +144,7 @@
     <div id="Lux">
         <h1><em> Oh Hi There My Name Is Lux</em></h1>
         <h3 id="LuxColor">I Am A Light Mage <i class="fas fa-certificate"></i></h3>
-        <img src="/Html/Images/Lux_thumb.jpg" id="Luximg">
+        <img src="/Images/Lux_thumb.jpg" id="Luximg">
         <p>
            Even Though I Am A Light Mage My Life And Secrets Arent That Bright <i class="fas fa-adjust"></i>  But When It Comes To <br> Fire Power Dont Worry I Can Power A Giant Magical Statue Just By Being Near It
         </p>

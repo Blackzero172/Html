@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons 19.1</title>
+    <style>
+        *{
+            color: white;
+            background-color: rgb(46, 64, 85);
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+        }
+        button{
+            transition: background-color 0.5s ease-in-out;
+        }
+        .Register.Flat{
+            border: rgb(59, 255, 147) 2px solid;
+            background-color: rgb(59, 255, 147);
+        }
+        .Register.Flat-Ghost{
+            border: rgb(59, 255, 147) 2px solid;
+        }
+        .Register.Round{
+            border: rgb(255, 115, 0) 2px solid;
+            background-color: rgb(255, 115, 0);
+            border-radius: 30px;
+        }
+        .Register.Round-Ghost{
+            border: rgb(255, 115, 0) 2px solid;
+            border-radius: 30px;
+        }
+        .Clear.Flat{
+            border: rgb(255, 0, 0) 2px solid;
+            background-color: rgb(255, 0, 0);
+        }
+        .Clear.Flat-Ghost{
+            border: rgb(255, 0, 0) 2px solid;
+        }
+        .Clear.Round{
+            border: rgb(212, 212, 0) 2px solid;
+            background-color: rgb(212, 212, 0);
+            border-radius: 30px;
+        }
+        .Clear.Round-Ghost{
+            border: rgb(212, 212, 0) 2px solid;
+            border-radius: 30px;
+        }
+        .Submit.Flat{
+            border: rgb(0, 183, 255) 2px solid;
+            background-color: rgb(0, 183, 255);
+        }
+        .Submit.Flat-Ghost{
+            border: rgb(0, 183, 255) 2px solid;
+        }
+        .Submit.Round{
+            border: rgb(136, 136, 136) 2px solid;
+            background-color: rgb(136, 136, 136);
+            border-radius: 30px;
+        }
+        .Submit.Round-Ghost{
+            border: rgb(136, 136, 136) 2px solid;
+            border-radius: 30px;
+        }
+        .Register{
+            font-size: 23px;
+            margin:10px;
+            width: 175px;
+            height: 50px;
+        }
+        .Clear{
+            font-size: 20px;
+            margin:10px;
+            width: 110px;
+            height: 40px;
+        }
+        .Submit{
+            font-size: 16px;
+            margin:10px;
+            width: 100px;
+            height: 30px;
+        }
+        .Register.Flat-Ghost:hover,.Register.Flat:hover{
+            background-color: rgba(59, 255, 147, 0.733);
+            border: rgb(59, 255, 146, 0.829)2px solid;
+        }
+        .Register.Round-Ghost:hover,.Register.Round:hover{
+            background-color: rgba(255, 115, 0, 0.856) ;
+            border: rgb(255, 115, 0.856) 2px solid;
+        }
+        .Clear.Flat-Ghost:hover,.Clear.Flat:hover{
+            background-color: rgba(255, 0, 0, 0.829);
+            border: rgba(255, 0, 0, 0.829)2px solid;
+        }
+        .Clear.Round-Ghost:hover,.Clear.Round:hover{
+            background-color: rgba(212, 212, 0, 0.829);
+            border: rgba(212, 212, 0, 0.829)2px solid;
+        }
+        .Submit.Flat-Ghost:hover,.Submit.Flat:hover{
+            background-color: rgba(0, 183, 255, 0.733);
+            border: rgba(0, 183, 255, 0.733)2px solid;
+        }
+        .Submit.Round-Ghost:hover,.Submit.Round:hover{
+            background-color: rgba(136, 136, 136, 0.747);
+            border: rgba(136, 136, 136, 0.747)2px solid;
+        }
+    </style>
+</head>
+<body>
+<div id="Flat">
+    <h1>Flat</h1>
+    <button class="Register Flat" href="#">Register</Button>
+    <Button class="Clear Flat" href="#">Clear</Button>
+    <Button class="Submit Flat" href="#">Submit</Button>
+</div>
+<div id="Round">
+    <h1>Round</h1>
+    <Button class="Register Round" href="#">Register</Button>
+    <Button class="Clear Round" href="#">Clear</Button>
+    <Button class="Submit Round"  href="#">Submit</Button>
+</div>
+<div id="Flat-Ghost">
+    <h1>Flat Ghost</h1>
+    <Button class="Register Flat-Ghost" href="#">Register</Button>
+    <Button class="Clear Flat-Ghost" href="#">Clear</Button>
+    <Button class="Submit Flat-Ghost"  href="#">Submit</Button>
+</div>
+<div id="Round-Ghost">
+    <h1>Round Ghost</h1>
+    <Button class="Register Round-Ghost" href="Register">Register</Button>
+    <Button class="Clear Round-Ghost" href="Clear">Clear</Button>
+    <Button class="Submit Round-Ghost" href="Submit">Submit</Button>
+</div>
+</body>
+</html>

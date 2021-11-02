@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinners 19.5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #Flex{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .spinner1{
+            position:relative;
+            border-left: 4px gray solid;
+            border-top: 4px gray solid;
+            border-right: 4px gray solid;
+            border-bottom: 4px cyan solid;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            left: 100px;
+            transform: rotate(0);
+            animation: Spinner1 0.75s linear 0s infinite;;
+        }
+         @keyframes Spinner1 {
+             to{
+                transform: rotate(360deg);
+             }
+         }
+         .spinner2{
+            position:relative;
+            border-left: 4px transparent solid;
+            border-bottom: 4px cyan solid;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            left: 300px;
+            transform: rotate(0);
+            animation: Spinner2 0.75s linear 0s infinite;
+        }
+        @keyframes Spinner2 {
+             to{
+                transform: rotate(360deg);
+             }
+        }
+        .spinner3,.spinner4,.spinner5{
+            position: relative;
+            border: 1px gray solid;
+            background-color: gray;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 40px;
+            left: 500px;
+        }
+        .spinner3{
+            animation: Spinner3 1s linear infinite;
+        }
+        .spinner4{
+            animation: Spinner4 1s linear infinite;
+        }
+        .spinner5{
+            animation: Spinner5 1s linear infinite;
+        }
+        @keyframes Spinner3{
+            10%{
+                background-color: cyan;
+                border:cyan 1px solid
+            }
+        }
+        @keyframes Spinner4{
+            60%{
+                background-color: cyan;
+                border:cyan 1px solid
+            }
+        }
+        @keyframes Spinner5{
+            99%{
+                background-color: cyan;
+                border:cyan 1px solid
+            }
+        }
+        .spinner6,.spinner7,.spinner8{
+            position: relative;
+            border: 1px cyan solid;
+            background-color: cyan;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 40px;
+            left: 700px;
+        }
+        .spinner6{
+            animation: Spinner6 .85s linear 0.5s infinite;
+        }
+        .spinner7{
+            animation: Spinner7 .85s linear 0.5s infinite;
+        }
+        .spinner8{
+            animation: Spinner8 .85s linear 0.5s infinite;
+        }
+        @keyframes Spinner6{
+            15%{
+                transform:translateY(-63.5%)
+            }
+        }
+        @keyframes Spinner7{
+            65%{
+                transform:translateY(-63.5%)
+            }
+        }
+        @keyframes Spinner8{
+            85%{
+                transform:translateY(-63.5%)
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="Flex">
+    <div class="spinner spinner1"></div>
+    <div class="spinner spinner2"></div>
+    <div class="spinner spinner3"></div>
+    <div class="spinner spinner4"></div>
+    <div class="spinner spinner5"></div>
+    <div class="spinner spinner6"></div>
+    <div class="spinner spinner7"></div>
+    <div class="spinner spinner8"></div>
+</div>
+</body>
+</html>
