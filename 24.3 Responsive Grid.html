@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid 24.3</title>
+    <style>
+        #grid{
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
+            height: 100vh;
+            width: 100vw;
+            grid-template-areas: 
+            'box-1 box-1 box-1 box-1'
+            'box-2 box-3 box-3 box-4'
+            'box-5 box-5 box-5 box-5';
+        }
+        @media(min-width: 501px) and (max-width: 768px){
+
+         #grid{
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
+            height: 50vh;
+            width: 100vw;
+            grid-template-areas: 
+            'box-1 box-1 box-1 box-1'
+            'box-2 box-3 box-3 box-3'
+            'box-4 box-4 box-4 box-4'
+            'box-5 box-5 box-5 box-5';
+            }
+        }
+        @media(max-width: 500px){
+         #grid{
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+            height:0vh;
+            width:98vw;
+            grid-template-areas: 
+            'box-1'
+            'box-2'
+            'box-3'
+            'box-4'
+            'box-5';
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            color: white;
+        }
+        .box{
+            padding: 3rem;
+            border-radius: 15px;
+        }
+        .box-1{
+            background-color: red;
+            grid-area: box-1;
+        }
+        .box-2{
+            background-color: blue;
+            grid-area: box-2;
+        }
+        .box-3{
+            background-color: green;
+            grid-area: box-3;
+        }
+        .box-4{
+            background-color: purple;
+            grid-area: box-4;
+        }
+        .box-5{
+            background-color: gold;
+            grid-area: box-5;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="box box-1">
+            <p>Header</p>
+        </div>
+        <div class="box box-2">
+            <p>Sidebar</p>
+        </div>
+        <div class="box box-3">
+            <p>Content</p>
+            <p>More Content Than We Had Before So This Column Is Now Quite Tall</p>
+        </div>
+        <div class="box box-4">
+            <p>Sidebar2</p>
+        </div>
+        <div class="box box-5">
+            <p>Footer</p>
+        </div>
+    </div>
+</body>
+</html> 

@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: black;
         }
         #Flex{
             display: flex;
@@ -18,9 +19,7 @@
         }
         .spinner1{
             position:relative;
-            border-left: 4px gray solid;
-            border-top: 4px gray solid;
-            border-right: 4px gray solid;
+            border: 4px gray solid;
             border-bottom: 4px cyan solid;
             width: 200px;
             height: 200px;
@@ -98,27 +97,45 @@
             left: 700px;
         }
         .spinner6{
-            animation: Spinner6 .85s linear 0.5s infinite;
+            animation: Spinner6 1s linear 0.5s infinite;
         }
         .spinner7{
-            animation: Spinner7 .85s linear 0.5s infinite;
+            animation: Spinner7 1s linear 0.5s infinite;
         }
         .spinner8{
-            animation: Spinner8 .85s linear 0.5s infinite;
+            animation: Spinner8 1s linear 0.5s infinite;
         }
         @keyframes Spinner6{
             15%{
-                transform:translateY(-63.5%)
+                transform:translateY(-25px)
+            }
+            35%{
+                transform:translateY(-12.5px)
+            }
+            65%{
+                transform:translateY(0)
             }
         }
         @keyframes Spinner7{
             65%{
-                transform:translateY(-63.5%)
+                transform:translateY(-25px)
+            }
+            75%{
+                transform:translateY(-12.5px)
+            }
+            85%{
+                transform:translateY(0)
             }
         }
         @keyframes Spinner8{
             85%{
-                transform:translateY(-63.5%)
+                transform:translateY(-25px)
+            }
+            90%{
+                transform:translateY(-12.5px)
+            }
+            99%{
+                transform:translateY(0)
             }
         }
     </style>

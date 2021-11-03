@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gallery 24.4</title>
+    <style>
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block; 
+}
+        #grid{
+            background-color: gray;
+            display: grid;
+            width: 100vw;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            grid-gap: 1.5rem;
+            grid-template-areas:
+            ' img1 img1 img1 img2 img2 img2 img2 img2 img3 img3 img4 img4 img4' 
+            ' img1 img1 img1 img2 img2 img2 img2 img2 img3 img3 img4 img4 img4' 
+            'img5 img5 img5 img2 img2 img2 img2 img2 img8 img8 img8 img9 img9' 
+            'img5 img5 img5 img6 img6 img6 img7 img7 img8 img8 img8 img9 img9'
+            'img5 img5 img5 img6 img6 img6 img13 img13 img13 img13 img13 img9 img9'
+            'img10 img10 img11 img11 img12 img12 img13 img13 img13 img13 img13 img14 img14'
+            'img10 img10 img11 img11 img12 img12 img13 img13 img13 img13 img13 img14 img14'; 
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+        }
+        .img5{
+            grid-area: img5;
+        }
+        .img6{
+            grid-area: img6;
+        }
+        .img7{
+            grid-area: img7;
+        }
+        .img8{
+            grid-area: img8;
+        }
+        .img9{
+            grid-area: img9;
+        }
+        .img10{
+            grid-area: img10;
+        }
+        .img11{
+            grid-area: img11;
+        }
+        .img12{
+            grid-area: img12;
+        }
+        .img13{
+            grid-area: img13;
+        }
+        .img14{
+            grid-area: img14;
+        }
+    </style>
+</head>
+<body>
+<div id="grid">
+    <img class="img img1" src="/Images/gal-1.jpeg" alt="">
+    <img class="img img2" src="/Images/gal-2.jpeg" alt="">
+    <img class="img img3" src="/Images/gal-3.jpeg" alt="">
+    <img class="img img4" src="/Images/gal-4.jpeg" alt="">
+    <img class="img img5" src="/Images/gal-5.jpeg" alt="">
+    <img class="img img6" src="/Images/gal-6.jpeg" alt="">
+    <img class="img img7" src="/Images/gal-7.jpeg" alt="">
+    <img class="img img8" src="/Images/gal-8.jpeg" alt="">
+    <img class="img img9" src="/Images/gal-9.jpeg" alt="">
+    <img class="img img10" src="/Images/gal-10.jpeg" alt="">
+    <img class="img img11" src="/Images/gal-11.jpeg" alt="">
+    <img class="img img12" src="/Images/gal-12.jpeg" alt="">
+    <img class="img img13" src="/Images/gal-13.jpeg" alt="">
+    <img class="img img14" src="/Images/gal-14.jpeg" alt="">
+</div>
+</body>
+</html>
